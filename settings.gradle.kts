@@ -18,9 +18,10 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 rootProject.name = "ModulizationExample"
 include(":app")
 include(":home:presentation")
 include(":home:data")
 include(":core:presentation:designsystem")
+include(":home:domain")
