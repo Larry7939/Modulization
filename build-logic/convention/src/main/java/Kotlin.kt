@@ -5,6 +5,9 @@ import org.gradle.kotlin.dsl.dependencies
 import org.gradle.kotlin.dsl.withType
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
+/**
+ * 유틸 함수로 만들어서 다른 컨벤션 플러그인에서도 공통으로 사용할 수 있게 구성
+ * */
 internal fun Project.configureKotlinAndroid(
     commonExtension: CommonExtension<*, *, *, *, *, *>
 ) {

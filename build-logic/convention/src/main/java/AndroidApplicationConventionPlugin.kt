@@ -4,6 +4,9 @@ import org.gradle.api.Project
 import org.gradle.kotlin.dsl.configure
 
 
+/**
+ * 컨벤션 플러그인을 만들고 여러 가지 모듈에서 해당 컨벤션 플러그인만 적용하면. 중복되는 코드 없이 빌드를 진행할 수 있다.
+ * */
 class AndroidApplicationConventionPlugin: Plugin<Project> {
     override fun apply(target: Project) {
         target.run {
