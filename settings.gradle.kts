@@ -21,4 +21,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "ModulizationExample"
 include(":app")
- 
+include(":home:presentation")
+include(":home:data")
+include(":core:presentation:designsystem")
