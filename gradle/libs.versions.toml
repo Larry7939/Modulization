@@ -1,4 +1,12 @@
 [versions]
+# Project versions
+projectApplicationId = "com.modulizationexample.modulizationexample"
+projectVersionName = "1.0"
+projectVersionCode = "1"
+projectMinSdkVersion = "34"
+projectTargetSdkVersion = "34"
+projectCompileSdkVersion = "34"
+desugar_jdk_libs = "2.0.4"
 agp = "8.7.2"
 androidTools = "31.5.0"
 hiltAndroid = "2.52"
@@ -42,6 +50,7 @@ android-tools-common = { group = "com.android.tools", name = "common", version.r
 kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
 ksp-gradlePlugin = { group = "com.google.devtools.ksp", name = "com.google.devtools.ksp.gradle.plugin", version.ref = "ksp" }
 room-gradlePlugin = { group = "androidx.room", name = "room-gradle-plugin", version.ref = "room" }
+desugar-jdk-libs = { module = "com.android.tools:desugar_jdk_libs", version.ref = "desugar_jdk_libs" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
