@@ -10,6 +10,7 @@ android {
     namespace = "com.modulizationexample.modulizationexample"
     compileSdk = 35
 
+    // 컨벤션 플러그인(AndroidApplicationConventionPlugin)에 의한 대체 대상
     defaultConfig {
         applicationId = "com.modulizationexample.modulizationexample"
         minSdk = 34
@@ -29,10 +30,14 @@ android {
             )
         }
     }
+
+    // 컨벤션 플러그인(AndroidApplicationConventionPlugin)에 의한 대체 대상
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
+
+    // 컨벤션 플러그인(AndroidApplicationConventionPlugin)에 의한 대체 대상
     kotlinOptions {
         jvmTarget = "11"
     }
