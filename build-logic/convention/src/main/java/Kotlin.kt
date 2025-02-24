@@ -25,6 +25,8 @@ internal fun Project.configureKotlinAndroid(
 
     configureKotlin()
 
+//    26 버전이 필요한 API를 21의 버전에서도 사용할 수 있게 해준다.
+//    대표적으로는 LocalDateTIme, LocalDate, ZondedDateTime과 같은 유틸리티 함수가 있다.
     dependencies {
         "coreLibraryDesugaring"(libs.findLibrary("desugar.jdk.libs").get())
     }
